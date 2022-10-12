@@ -51,7 +51,7 @@ button a {
 
 .secret-content img {
     width: 50%;
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
 .img {
@@ -60,6 +60,11 @@ button a {
     border-radius: 50%;
     background-color: grey;
     margin: 50px auto;
+    overflow: hidden;
+    border: 1px solid grey;
+}
+.img img{
+    width: 150px;
 }
 
 .login-form {

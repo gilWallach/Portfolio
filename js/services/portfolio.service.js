@@ -14,7 +14,10 @@ const gProjects = [
     id: "safeContent",
     name: "Safe content",
     title: "Login as user or admin",
-    desc: "You can login as a use or as an admin and access content accordingly",
+    desc: `Login as a use or as an admin and access content accordingly. </br> 
+    </br>
+    To login as user use 'Muki as the username and 'blabla' as the password </br>
+    To login as admin use 'Puki' as the username and 'secret' as the password`,
     url: "projects/safeContent/index.html",
     publishedAt: 1448693940000, //! ??
     labels: ["input validation", "query strings"],
@@ -23,7 +26,7 @@ const gProjects = [
     id: "todo",
     name: "To do",
     title: "Organize your tasks",
-    desc: "You can organize your tasks by importance, sort and filter them",
+    desc: "Organize your tasks by importance, sort and filter them",
     url: "projects/todo/index.html",
     publishedAt: 1448693940000, //! ??
     labels: ["sorting", "filtering"],
@@ -38,7 +41,9 @@ function initPage() {
 
 function renderPortfolio() {
   var strHtmls = gProjects.map(project => `
-    <div class="col-md-4 col-sm-6 portfolio-item">
+    <div class="col-md-4 col-sm-6 portfolio-item" onclick="renderModalInfo(
+      '${project.id}'
+    )">
     <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
       <div class="portfolio-hover">
         <div class="portfolio-hover-content">
@@ -59,6 +64,36 @@ function renderPortfolio() {
   $('.items-container').html(strHtmls)
 }
 
-function renderModalInfo(){
+function renderModalInfo(id) {
+  const project = getProjById(id)
 
+  const strHTML = `
+  <h2>${project.name}</h2>
+  <p class="item-intro text-muted">${project.title}.</p>
+  <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.png" alt="">
+  <p>${project.desc}</p>
+  <button class="btn btn-primary"><a href="projects/${project.id}/index.html" target="_blank">Check it Out!</a></button>
+  `
+
+  $('.modal-body').html(strHTML)
+}
+
+/* <ul class="list-inline">
+    <li>Date: January 2017</li>
+    <li>Client: Threads</li>
+    <li>Category: Illustration</li>
+  </ul>
+  <button class="btn btn-primary" data-dismiss="modal" type="button">
+    <i class="fa fa-times"></i>
+    Close Project
+  </button> */
+
+function onSubmitContact() {
+  const email = document.querySelector('.email-input').value
+  const subject = document.querySelector('.contact-sec .subject-input').value
+  const message = document.querySelector('.message-input').value
+
+  const strUrl = `http://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${message}`
+
+  window.open(`${strUrl}`)
 }

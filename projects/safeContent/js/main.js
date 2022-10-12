@@ -12,7 +12,8 @@ function onInit() {
 
 function renderLoginForm() {
     var elFormContainer = document.querySelector('.login-form')
-    elFormContainer.innerHTML = `<div class="img"></div>
+    elFormContainer.innerHTML = `<div class="img"><img src="img/profile-pic.jpg" alt="profile-pic">
+    </div>
     <form onsubmit="onLogin(event)">
         <label>Username</label></br>
         <input name="username" oninput="onEnterUsername(this.value)" type="text" placeholder="Enter username"></br>

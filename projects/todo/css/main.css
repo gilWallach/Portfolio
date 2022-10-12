@@ -1,7 +1,9 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(255, 200, 200, 0.226);
-
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    background-color: rgb(255, 246, 229);
+    overflow-y: hidden;
+    height: 100vh;
 }
 
 h1 {
@@ -17,26 +19,44 @@ li {
     cursor: pointer;
 }
 
+select,
+button {
+    cursor: pointer;
+}
+
+select,
+input,
+button {
+    font-family: 'Satisfy', cursive;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: #eee;
+    border: 1px solid grey;
+}
+
+.container form{
+    padding: 20px;
+}
 .done {
     text-decoration: line-through;
 }
 
 .todo-filter {
     padding: 1em;
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(234, 216, 180);
 
 }
 
 .stat {
     padding: 0.75em 1em;
-    background-color: rgb(255, 200, 200);
+    background-color: rgb(234, 216, 180);
     margin-bottom: 10px;
 }
 
 .container {
-    width: fit-content;
-    margin: 40px auto;
-    background-color: rgb(209, 237, 255);
+    width: 50%;
+    margin: 140px auto;
+    background-color: rgb(219, 203, 174);
     padding: 20px;
 }
 
@@ -50,11 +70,6 @@ li {
     width: 30%;
 }
 
-.container button {
-    background-color: #eee;
-    border: 1px solid grey;
-}
-
 .container button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
@@ -65,9 +80,4 @@ li {
 .todo-item-container button {
     font-weight: bold;
     color: grey;
-}
-
-
-select {
-    cursor: pointer;
 }
