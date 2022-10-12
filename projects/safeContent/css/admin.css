@@ -1,0 +1,53 @@
+@import 'main.css';
+h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.header button {
+    margin-right: 20px;
+}
+.users-table-sec{
+    width: 100%;
+    background-color: rgb(213 247 230);
+}
+.users-table-container {
+    margin: auto;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.table-description{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.users-table-container select {
+    height: fit-content;
+    margin: 20px auto;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.users-table-container table {
+    width: fit-content;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+
+.users-table-container table td,th {
+    border: 1px solid grey;
+    margin: 0;
+    padding: 10px;
+}

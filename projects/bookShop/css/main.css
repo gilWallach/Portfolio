@@ -1,0 +1,234 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+.container {
+    width: 100vw;
+}
+
+.books-container {
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: rgb(247, 247, 247);
+}
+
+.books-container table {
+    background-color: white;
+}
+
+.books-container thead {
+    background-color: rgb(1, 161, 102);
+    color: #eee;
+}
+
+.books-container button {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px 10px;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.green-bg {
+    background-color: rgb(1, 161, 102);
+}
+
+.books-container .read-btn {
+    background-color: rgb(0, 139, 214);
+    cursor: pointer;
+}
+
+.books-container .update-btn {
+    background-color: rgb(229, 149, 0);
+    cursor: pointer;
+
+}
+
+.books-container .delete-btn {
+    background-color: rgb(196, 0, 0);
+    cursor: pointer;
+
+}
+
+.books-container {
+    width: 70%;
+    margin: 40px auto;
+}
+
+.books-container table {
+    margin: 40px 0;
+    width: 100%;
+}
+
+.books-container th {
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+/* ! can't reach the tr  border-collapse on table?*/
+.books-container tr {
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 10px;
+}
+
+.prev {
+    cursor: pointer;
+}
+
+.next {
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.book-card {
+    position: relative;
+    border: 1px solid #eee;
+    padding: 20px;
+    background-color: white;
+}
+
+.book-card img {
+    width: 200px;
+}
+
+.curr-page {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.display-btn img {
+    padding: 0;
+    width: 25px;
+}
+
+.display-btn {
+    background-color: white;
+    cursor: pointer;
+}
+
+.read-modal {
+    box-sizing: border-box;
+    /* overflow-y: auto; */
+    width: 300px;
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    right: -300px;
+    padding: 100px 30px 20px;
+    border: 1px solid #eee;
+    box-shadow: -3px 3px 5px rgb(198, 198, 198);
+    background-color: rgb(247, 247, 247);
+}
+
+.read-modal img {
+    width: 225px;
+    right: 50%;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.rate {
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.description {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px;
+}
+
+.close-read-modal-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(196, 0, 0);
+}
+
+.bookmark-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(1, 161, 102);
+}
+.remove-bookmark-btn{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: rgb(1, 161, 102);
+}
+
+.read-modal-open {
+    right: 0;
+    transition: right .5s;
+}
+
+.add-book-user-input {
+    box-sizing: border-box;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    padding: 50px 30px 30px;
+    margin: auto;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 5px rgb(198, 198, 198);
+    background-color: rgb(247, 247, 247);
+    transition: left 0.5s;
+}
+.update-user-input{
+    box-sizing: border-box;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    padding: 50px 30px 30px;
+    margin: auto;
+    border: 1px solid #eee;
+    box-shadow: 3px 3px 5px rgb(198, 198, 198);
+    background-color: rgb(247, 247, 247);
+    transition: left 0.5s;
+}
+.close-left-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(196, 0, 0);
+}
+
+.show-left-modal-user-input {
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.disabled {
+    background-color: rgba(1, 161, 102, 0.387);
+}

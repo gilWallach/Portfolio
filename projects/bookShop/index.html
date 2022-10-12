@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>y Book Shop</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>My Book Store</h1>
+    </header>
+    <main class="container">
+        <div class="books-container">
+
+            <button class="green-bg" onclick="onAddBook()">Add book</button>
+            <section class="filters">
+                <label>
+                    Max price:
+                    <input type="range" min="10" max="75" value="75" class="filter-max-price"
+                        onchange="this.title=this.value;onSetFilterBy({maxPrice: this.value})" />
+                </label>
+                <label>
+                    Min rate:
+                    <input type="range" min="0" max="10" value="0" class="filter-min-rate"
+                        onchange="this.title=this.value;onSetFilterBy({minRate: this.value})" />
+                </label>
+
+                <!-- <input class="set-txt-filter" type="text" oninput="onSetFilterByTitle(this.value)"
+                placeholder="Type book title..." /> -->
+                <input class="set-txt-filter" type="text" oninput="onSetFilterBy({text: this.value})"
+                    placeholder="Type book title..." />
+            </section>
+            <section class="books-display">
+                <div class="cards"></div>
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th colspan="3" class="actions">actions</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="paging"><button class="prev green-bg disabled" onclick="onChangePage(-1)">prev</button>
+                    <span class="curr-page"></span>
+                    <button class="next green-bg" onclick="onChangePage(1)">Next</button>
+                </div>
+                <div class="display-btns">
+                    <button class="display-btn" onclick="renderBooksCards()"><img src="/img/cards-icon.png"
+                            alt=""></button>
+                    <button class="display-btn" onclick="renderBooksTable()"><img src="/img/list-icon.png"
+                            alt=""></button>
+                </div>
+            </section>
+
+            <div class="read-modal">
+                <button onclick="onCloseModal()" class="close-read-modal-btn">X</button>
+                <button onclick="onBookmark()" class="bookmark-btn">Bookmark</button>
+                <button onclick="onRemoveBookmark()" class="remove-bookmark-btn">Remove bookmark</button>
+                <h2 class="title"></h2>
+                <div class="img"></div>
+                <div class="price"></div>
+                <div class="rate-container">
+                    
+                </div>
+                <p class="description"></p>
+            </div>
+
+            <div class="add-book-user-input">
+                <form>
+                    <button onclick="onCloseLeftModal()" class="close-left-modal">X</button>
+                    <label>Enter book title:</label><br>
+                    <input class="enter-title" type="text"><br>
+                    <label>Enter price:</label><br>
+                    <input class="enter-price" type="text"><br>
+                    <label>Enter image URL:</label><br>
+                    <input class="enter-img" type="text"><br>
+                    <button onclick="onSubmitNewBook()" class="green-bg">Add book</button>
+                </form>
+            </div>
+
+            <div class="update-user-input">
+                <form>
+                    <button onclick="onCloseUpdate()" class="close-left-modal">X</button>
+                    <label class="enter-updated-price">Enter updated price:</label><br>
+                    <input class="updated-price" type="text"><br>
+                    <button onclick="onSubmitUpdate()" class="green-bg">Update</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/services/service.utils.js"></script>
+    <script src="js/services/service.storage.js"></script>
+    <script src="js/services/service-bookstore.js"></script>
+    <script src="js/bookstore.controller.js"></script>
+    <script src="js/modal.controller.js"></script>
+</body>
+
+</html>

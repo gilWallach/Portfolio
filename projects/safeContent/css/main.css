@@ -1,0 +1,97 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid grey;
+}
+
+button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(90 228 168);
+}
+
+.user-details {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.admin-btn {
+    margin-right: 20px;
+}
+
+.secret-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 80px auto 0;
+}
+
+.secret-content img {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 50px auto;
+}
+
+.login-form {
+    width: 30%;
+    margin: auto;
+}
+
+.login-form label {
+    width: 100%;
+    font-weight: bold;
+    margin: 5px 10px;
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 0;
+    color: #fff;
+    background-color: rgb(90 228 168);
+    border: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

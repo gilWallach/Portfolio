@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin page</title>
+</head>
+
+<body onload="initAdmin()">
+    <div class="header">
+
+        <h1>Welcome Back Admin!</h1>
+        <button class="logout-admin-btn" onClick="onLogoutAdmin()"><a href="index.html">logout</a></button>
+    </div>
+    <button><a href="index.html">Back</a></button>
+    <div class="secret-content"><img src="img/secret2.jpg" alt=""></div>
+<section class="users-table-sec">
+
+    <div class="users-table-container">
+        <div class="table-description">
+            <h2>All users</h2>
+            <select onchange="onSetSort(this.value)">
+                <option value="">Sort by</option>
+                <option value="username">Username</option>
+                <option value="lastLoginTime">last login</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Last login time</th>
+                    <th>Is admin</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin-main.js"></script>
+    <script src="js/service/service.js"></script>
+    <script src="js/service/admin-service.js"></script>
+    <!-- <script src="js/service/service-local-storage.js"></script> -->
+</body>
+
+</html>

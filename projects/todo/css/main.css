@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 200, 200, 0.226);
+
+}
+
+h1 {
+    text-align: center;
+}
+
+li button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.todo-filter {
+    padding: 1em;
+    background-color: rgb(255, 200, 200);
+
+}
+
+.stat {
+    padding: 0.75em 1em;
+    background-color: rgb(255, 200, 200);
+    margin-bottom: 10px;
+}
+
+.container {
+    width: fit-content;
+    margin: 40px auto;
+    background-color: rgb(209, 237, 255);
+    padding: 20px;
+}
+
+.todo-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.todo-item-content {
+    width: 30%;
+}
+
+.container button {
+    background-color: #eee;
+    border: 1px solid grey;
+}
+
+.container button:hover {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    box-shadow: 2px 2px 5px grey;
+    cursor: pointer;
+}
+
+.todo-item-container button {
+    font-weight: bold;
+    color: grey;
+}
+
+
+select {
+    cursor: pointer;
+}
