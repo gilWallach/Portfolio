@@ -1,0 +1,106 @@
+.fs14 {
+  font-size: em(14px);
+}
+.fs16 {
+  font-size: em(16px);
+}
+.fs18 {
+  font-size: em(18px);
+}
+.fs22 {
+  font-size: em(22px);
+}
+
+.bold {
+  font-family: airBnb-Med;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.l-grey {
+  color: $clr5;
+}
+
+.underline {
+  text-decoration: underline;
+}
+// flex helpers
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-space-between {
+    justify-content: space-between;
+  }
+  &.align-center {
+    align-items: center;
+  }
+}
+
+.flex-grow-1{
+  flex-grow: 1;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+.self-center {
+  align-self: center;
+}
+.self-end {
+  align-self: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+// Media helpers
+
+.square-ratio {
+  @include aspect-ratio(1, 1);
+}
+.video-ratio {
+  @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+  @include aspect-ratio(9, 16);
+}
+
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.clean-margin {
+  margin: 0;
+}
+
+.section {
+  max-width: 980px;
+  margin: 0 auto 160px;
+}
+
+.section-heading {
+  width: fit-content;
+  font-size: 2.5rem;
+  margin: 3rem auto;
+  line-height: 5rem;
+  box-shadow: 0 4px $clr1;
+}

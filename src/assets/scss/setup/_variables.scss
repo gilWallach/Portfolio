@@ -1,0 +1,39 @@
+// Colors
+$clr1: #ab599d;
+$clr2: #07044B;
+$clr3: #ffffff;
+$clr4: #222222;
+$clr4: #717171;
+$clr5: #b0b0b0;
+$clr6: #dddddd;
+$clr7: #ebebeb;
+$clr8: #2c04a4;
+
+$clr-lighter-bgc: #ffffff0f;
+
+$gradient-1: linear-gradient(225deg, $clr2, $clr8);
+$gradient-2: linear-gradient(310deg, $clr2, $clr8);
+$text-gradient: linear-gradient(to right, $clr1 0%, $clr3 100%);
+
+
+$ease: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+// Logo
+$logo-font: Allerta;
+// sizes
+$header-height: 80px;
+
+//Layout
+$layout-padding: 16px;
+
+$box-padding: 10px;
+
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 600px;
+$normal-breakpoint: 960px;
+$wide-breakpoint: 1200px;
+
+$padded-mobile-breakpoint: $mobile-breakpoint + $layout-padding;
+$padded-narrow-breakpoint: $narrow-breakpoint + $layout-padding * 2;
+$padded-normal-breakpoint: $normal-breakpoint + $layout-padding * 2;
+$padded-wide-breakpoint: $wide-breakpoint + $layout-padding * 2;

@@ -1,0 +1,23 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      // 'base': #ab599d,
+      'base': $clr1,
+      ),    
+      'info': (
+        // 'base': #0d065a,
+      // 'base': #ab599d,
+      ),    
+  ),
+  );
+
+// $--button: (
+//   --el-color-primary: #ab599d
+// );
+
+// @forward 'element-plus/theme-chalk/src/common/var.scss' with (
+//   $button: $--button,
+
+// );
+
+@use 'element-plus/theme-chalk/src/index.scss' as *;

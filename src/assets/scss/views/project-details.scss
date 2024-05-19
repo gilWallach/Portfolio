@@ -1,0 +1,69 @@
+#project-details-section {
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        font-size: 1.25rem;
+        margin-top: 0;
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 670px;
+        margin: auto;
+        text-align: center;
+
+        .stack-wrapper {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 1.5rem;
+            color: $clr2;
+
+            .stack-item {
+                padding: .5rem 1rem;
+                background-color: $clr1;
+                box-shadow: -1px -1px 4px 0px #0d065a;
+                border-radius: 4px;
+                animation: left-load .6s $ease;
+
+                &.right {
+                    animation: right-load 1s $ease;
+                }
+            }
+        }
+
+        .tech-description {
+            margin: 0;
+            animation: bottom-load 1s $ease;
+        }
+    }
+
+    a {
+        color: $clr1;
+        font-size: 1.5rem;
+        margin: 3rem auto;
+        width: fit-content;
+        animation: bottom-load .6s $ease;
+    }
+
+    .gallery-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+        .img-container {
+            animation: left-load .6s $ease;
+
+            &.right {
+                animation: right-load 1s $ease;
+            }
+        }
+    }
+}
+
+.el-dialog{
+    width: 840px !important;
+}

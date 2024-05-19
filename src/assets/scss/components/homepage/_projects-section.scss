@@ -1,0 +1,126 @@
+#projects {
+    // background: $gradient-2;
+
+    h2{
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all .3s $ease;
+    }
+
+    .projects-list-wrapper {
+        .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $clr1;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: all .3s $ease;
+
+            &.right {
+                transform: translateX(100%);
+                opacity: 0;
+                transition: all .3s $ease;
+            }
+
+            h4 {
+                position: relative;
+                top: 0;
+                transition: all .3s $ease;
+            }
+
+            .content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                opacity: 0;
+                transition: opacity .3s;
+                background-color: $clr1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .short-description-p {
+                display: none;
+            }
+
+            &:hover .short-description-p {
+                display: block;
+                position: absolute;
+                margin-inline: 1.5rem;
+                top: 75%;
+                z-index: 1;
+            }
+
+            &:hover .content {
+                opacity: 1;
+            }
+
+            &:hover h4 {
+                top: -75%;
+                font-size: 24px;
+                margin-top: 0;
+            }
+
+            h5 {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: auto 1.5rem;
+                color: $clr2;
+
+
+                span.tag {
+                    padding: .5rem 1rem;
+                    background-color: $clr-lighter-bgc;
+                    box-shadow: -1px -1px 4px 0px #0d065a;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        .img-wrapper {
+            position: relative;
+
+            .content {
+                background-color: $clr1;
+                padding: 0 1.25rem;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h5 {
+                    transition: all .3s $ease;
+                }
+            }
+        }
+    }
+
+    &.animate {
+        .card-wrapper {
+            transform: translateX(0);
+            opacity: 1;
+
+            &.right {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+}

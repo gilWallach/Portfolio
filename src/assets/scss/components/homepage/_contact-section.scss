@@ -1,0 +1,56 @@
+#contact {
+    h2,
+    h3 {
+        margin-bottom: 1.5rem;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all .3s ease-in;
+    }
+
+    h3 {
+        transition-delay: .15s;
+        transition-property: all;
+    }
+
+    .logos-wrapper {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+
+        .logo {
+            width: 96px;
+            transform: translateX(-100%);
+            opacity: 0;
+            transition: all .3s ease-in;
+            transition-delay: .15s;
+            transition-property: all;
+
+            &:nth-child(2) {
+                transition-delay: .3s;
+                transition-property: all;
+            }
+
+            &:nth-child(3) {
+                transition-delay: .45s;
+                transition-property: all;
+            }
+        }
+
+    }
+
+    &.animate {
+
+        h2,
+        h3 {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+
+        .logo {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+    }
+}

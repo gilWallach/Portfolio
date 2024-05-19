@@ -1,0 +1,52 @@
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    padding-block: 25px;
+    transition: all .6s;
+    z-index: 100;
+
+    &.scrolled {
+        padding: 0;
+        background: $gradient-1;
+        background-size: 175% 100%;
+        animation: gradient 10s infinite linear;
+        
+        .header-sub-wrapper {
+            padding: 1rem 0;
+        }
+    }
+
+    .nav-wrapper {
+        gap: 40px;
+        animation: right-load .6s $ease;
+
+        .nav-item {
+            color: $clr1;
+            background: transparent;
+            transition: all .6s $ease;
+        }
+
+        .active {
+            font-weight: 700;
+            color: $clr3
+        }
+    }
+
+    .divider {
+        background-color: $clr1;
+        height: 4px;
+        width: 100%;
+        transform: translateX(-200%);
+        opacity: 0;
+        transition: all .8s;
+        
+        &.animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+      }
+
+}
