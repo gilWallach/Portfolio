@@ -44,7 +44,7 @@ function _createProjects() {
                 name: 'AirGnb',
                 subHeading: 'Room rental app inspired by AirBnb',
                 generalDescription: 'Discover accommodation all over the world',
-                techDescription: ' Collaboration with two other developers as a final project of the Coding Academy Bootcamp. We implemented partial flow of both buyer and seller, including filtering options, order management, notifications about order status, in a time frame of 14 days. \n\n We worked remotely, collaborating on github, 3-4 video meetings a day & having our code reviewed by each other. We divided the development of features & components between us, consulting on strategies, complex logic & choice of tools',
+                techDescription: ' Collaboration with two other developers as a final project of the Coding Academy Bootcamp. We implemented partial flow of both buyer and seller, including filtering options, order management, notifications about order status, in a time frame of 14 days. \n\n We worked remotely, collaborating on github, 3-4 video meetings a day & having our code reviewed by each other. We divided the development of features & components between us, consulting on strategies, complex logic & choice of tools.',
                 thumbnailUrl: 'https://res.cloudinary.com/dmfzwepkf/image/upload/v1702633950/Portfolio/Projects/AirGnb/AirGnb-_Home_sy3ovr.png',
                 imgUrls: [
                     'https://res.cloudinary.com/dmfzwepkf/image/upload/v1702633950/Portfolio/Projects/AirGnb/AirGnb-_Home_sy3ovr.png',
@@ -60,7 +60,7 @@ function _createProjects() {
                 name: 'Meme generator',
                 subHeading: 'Create your own memes',
                 generalDescription: 'Choose picture, add text & emojis, then download you meme',
-                techDescription: 'This is a Vanilla JS project, making use of the HTML canvas element. \n\n  Implementing filtering options of pictures as well as drag & drop elements on the canvas. I enjoyed getting to know the HTML canvas tag. \n\n The project was developed in a time frame of two days.',
+                techDescription: 'This is a Vanilla JS project, making use of the HTML canvas element. \n\n  Implementing filtering options of pictures as well as drag & drop elements on the canvas. This was one of my first projects, I enjoyed getting to know the HTML canvas tag. \n\n The project was developed in a time frame of two days.',
                 thumbnailUrl: 'https://res.cloudinary.com/dmfzwepkf/image/upload/v1702634137/Portfolio/Projects/Meme%20generator/Meme_generator_-_homepage_mqy7or.png',
                 imgUrls: [
                     'https://res.cloudinary.com/dmfzwepkf/image/upload/v1702634137/Portfolio/Projects/Meme%20generator/Meme_generator_-_homepage_mqy7or.png',
